@@ -1,0 +1,11 @@
+<app-componente-regiones (emisor)="regionSeleccionada($event)"></app-componente-regiones>
+
+<div class="album py-5 bg-light">
+  <div class="container"  >
+    <div class="row">
+    <div *ngFor="let item of listaPaises" class="col-3">
+      <app-componente-paises-bandera [cosas]="item" ></app-componente-paises-bandera>
+    </div>
+  </div>
+  </div>
+</div>
