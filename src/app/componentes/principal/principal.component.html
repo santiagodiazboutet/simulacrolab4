@@ -1,0 +1,23 @@
+
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Listado Jumbotron Diaz Boutet</h1>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button" (click)="cambiarLista()">Cambiar vista »</a></p>
+    </div>
+    <app-componente-principal [TipoLista]="tipoListado" (mandaPais)="Detallar($event)" (mandaLista)="mandaLista($event)"></app-componente-principal>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <app-borrar [pais]="unpais" [lista]="lista"></app-borrar>
+      <app-mostrar [pais]="unpais"></app-mostrar>
+      <app-modificar [pais]="unpais"></app-modificar>
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
